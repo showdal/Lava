@@ -3,6 +3,7 @@ package day00;
 import java.util.Scanner;
 public class Lotto {
 	public static void main(String args[]){
+		/*
 		S
 		System.out.println("년도를 입력하세요 : ");
 		
@@ -15,7 +16,6 @@ public class Lotto {
 		{
 			System.out.println(y+"년 : "+"평년 ");
 		}
-		
-		}
+		*/
 	}
 }
