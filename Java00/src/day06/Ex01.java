@@ -70,17 +70,19 @@ package day06;
 
 	
 */
+
+import javax.swing.*;
 import java.util.*;
 public class Ex01 {
 	public Ex01() {
 //		sol1();	
-//		sol2();	
+		sol2();	
 //		sol3();	
 //		sol4();	
 //		sol5();	
 //		sol6();	
 //		sol7();	
-		sol8();	
+//		sol8();	
 		
 		
 	}
@@ -193,34 +195,31 @@ public class Ex01 {
 		}
 	}
 	public void sol8() {
-		Scanner sc = new Scanner(System.in);
-		System.out.print("이름 : ");
-		String a = sc.nextLine();
-		String [] name = new String[] {"soyoung", "dooyong", "taehee", "seojin", "hee"};
+//		Scanner sc = new Scanner(System.in);
+//		System.out.print("이름 : ");
+//		String a = sc.nextLine();
+		String [] name = new String[] {"쇼영", "dooyong", "taehee", "seojin", "wooseung"};
 		String [] phone = new String[] {"010-0000-0000", "010-0010-0000",
-										"010-0000-0000", "010-0000-0000","010-0000-0000"};
-		String [] mail = new String[] {"@", "@", "@", "@", "@"};
+										"010-0000-4000", "010-0300-0000","010-0050-0000"};
+		String [] mail = new String[] {"dj@", "a@", "s@", "d@", "f@"};
 
-		int[] num = new int[]{1,2,3,4,5};
-		for(int i=0; i<5; i++){
-			a = name[i];
-			if() {
-				
-			} 
-			
-			
-			
-			
-			System.out.print(name[i] +", " +phone[i] + ", " + mail[i]);
+		int idx = -1;
+		String a = JOptionPane.showInputDialog("What is your name?");
+
+		for(int i=0; i<name.length; i++){
+			if(a.equals(name[i])) {
+				idx=i;
+				break;
+//				System.out.print(name[i] +", " +phone[i] + ", " + mail[i]);
+			}
 		}
-	}
-	
-	
-	
-	
-	
-	
-	
+			String msg = name[idx] + "\t"+phone[idx] +"\t"+ mail[idx];
+			if(idx == -1) {
+				msg = "Nothing";
+			} else {
+		}
+			 JOptionPane.showMessageDialog(null, msg);
+	}	
 	
 	public static void main(String[] args) {
 		new Ex01();	

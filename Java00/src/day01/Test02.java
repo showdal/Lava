@@ -21,6 +21,6 @@ public class Test02 {
 		System.out.println(str1==str3);
 		System.out.println(str3.equals(str1));
 		
-		
+	
 	}
 }
