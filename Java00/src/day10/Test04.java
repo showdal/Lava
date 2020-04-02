@@ -68,8 +68,8 @@ public class Test04 {
 		
 */		
 		t2.result();
-		t2.setAvg();
 		t2.setSum();
+		t2.setAvg();
 		t2.print();
 		System.out.println();
 		

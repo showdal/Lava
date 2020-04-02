@@ -11,25 +11,25 @@ import java.util.Arrays;
 import javax.swing.JOptionPane;
 public class Ex04 {
 	
-	int [][] bb = new String [5][7];;
+	String [][] bb = new String [5][7];; 
 	
 	public Ex04() {
-		int [][] bb = data();
+//		int [][] bb = data();
 		
 	}
 	//초기화
 	public void data() {
 		
-		bb=new int[5][7];
+		bb=new String[5][7];
 		System.out.print("점수 데이터 : ");
 		for(int i=0; i<5; i++) {
 			for(int j=0; j<5; j++) {
 				int pp = (int)((Math.random()*100)+1);
-				bb[i][j] = pp;
+//				bb[i][j] = pp;
 //				System.out.print(pp + ", ");
 			}
+//			System.out.println(Arrays.deepToString(pp));
 		}				
-		System.out.println(Arrays.deepToString(bb));
 	}		
 	
 	
@@ -43,17 +43,17 @@ public class Ex04 {
 		}
 		return b;
 	}		
-//	public int level () {
-//		
-//		int c = 0;
-//		for(int i=5; i>5; i--) {
-//			
-//			
-//			
-//			
-//		}
-//		return c;
-//	}	
+	public int level () {
+		
+		int c = 0;
+		for(int i=5; i>5; i--) {
+			
+			
+			
+			
+		}
+		return c;
+	}	
 	
 		
 	

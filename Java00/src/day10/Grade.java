@@ -34,8 +34,8 @@ public class Grade {
 	}
 	
 	public void setAvg() {
-		double avg1 = sum /10.;
-		avg1 = avg;
+		double avg1 = sum / 10.;
+		avg = avg1;
 		}
 	
 	

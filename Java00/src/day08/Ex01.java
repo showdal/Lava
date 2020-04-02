@@ -17,7 +17,7 @@ public class Ex01 {
 		String [][][] Team = new String [2][][];
 		
 		for(int i=0; i<6; i++) {
-			Team1 [0][0][i] = {Team1,name,};
+//			Team1 [0][0][i] = {Team1,name,}; 
 			
 			
 			Team1[i][0] = name[i];
